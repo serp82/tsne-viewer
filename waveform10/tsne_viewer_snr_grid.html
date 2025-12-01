@@ -1,0 +1,102 @@
+
+    <!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>t-SNE Grid Viewer (Subplots)</title>
+        <style>
+            body {
+                font-family: sans-serif;
+                text-align: center;
+                background: #fafafa;
+                margin: 20px;
+            }
+            h2 {
+                color: #333;
+                margin-bottom: 30px;
+            }
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 20px;
+                justify-items: center;
+            }
+            .img-box {
+                background: white;
+                padding: 10px;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                transition: transform 0.2s ease;
+            }
+            .img-box:hover {
+                transform: scale(1.03);
+            }
+            .snr-label {
+                font-weight: bold;
+                margin-bottom: 8px;
+                color: #555;
+            }
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 6px;
+                border: 1px solid #ddd;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>t-SNE Distributions per SNR</h2>
+        <div class="grid">
+            
+        <div class="img-box">
+            <div class="snr-label">SNR -16 dB</div>
+            <img src="tsne_SNR_-16.png" alt="SNR -16" />
+        </div>
+        
+        <div class="img-box">
+            <div class="snr-label">SNR -14 dB</div>
+            <img src="tsne_SNR_-14.png" alt="SNR -14" />
+        </div>
+        
+        <div class="img-box">
+            <div class="snr-label">SNR -12 dB</div>
+            <img src="tsne_SNR_-12.png" alt="SNR -12" />
+        </div>
+        
+        <div class="img-box">
+            <div class="snr-label">SNR -10 dB</div>
+            <img src="tsne_SNR_-10.png" alt="SNR -10" />
+        </div>
+        
+        <div class="img-box">
+            <div class="snr-label">SNR -8 dB</div>
+            <img src="tsne_SNR_-8.png" alt="SNR -8" />
+        </div>
+        
+        <div class="img-box">
+            <div class="snr-label">SNR -6 dB</div>
+            <img src="tsne_SNR_-6.png" alt="SNR -6" />
+        </div>
+        
+        <div class="img-box">
+            <div class="snr-label">SNR -4 dB</div>
+            <img src="tsne_SNR_-4.png" alt="SNR -4" />
+        </div>
+        
+        <div class="img-box">
+            <div class="snr-label">SNR -2 dB</div>
+            <img src="tsne_SNR_-2.png" alt="SNR -2" />
+        </div>
+        
+        <div class="img-box">
+            <div class="snr-label">SNR 0 dB</div>
+            <img src="tsne_SNR_0.png" alt="SNR 0" />
+        </div>
+        
+        </div>
+        <p style="color: #666; margin-top: 30px;">
+            총 9개 이미지 표시됨.
+        </p>
+    </body>
+    </html>
+    
